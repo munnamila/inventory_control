@@ -1,0 +1,112 @@
+# Text/Title
+st.title("")
+
+# header/sunheader
+st.header("")
+st.subheader("")
+
+# Text
+st.text("")
+
+# Markdown
+st.markdown("")
+
+# Error/Colorful Text
+st.success("")
+st.info("")
+st.warning("")
+st.error("")
+st.exception("")
+
+# Get Help Info About Python
+st.help(range)
+
+# Writing Text super fxn
+st.write("")
+
+# Images
+from PIL import Image
+img = Image.open(".png")
+st.image(img, width=300, caption="Simple Image")
+
+# Video
+Vid_file = open(".mp4", "rb").read()
+st.video(vid_file)
+
+# Audio
+audio_file = open(".mp3", "rb").read()
+st.audio(audio_file, format='audio/mp3')
+
+# Widget
+# checkbox
+if st.check("")
+    st.text("")
+
+# radio buttons
+status = st.radio("", ("a", "b"))
+
+# SelectBox
+occupation = st.belectbox("", ["a", "b"])
+
+# MultiSelect
+location = st.multiselect("", ("a", "b"))
+
+# Slider
+level = st.slider("", 1, 5)
+
+# Buttons
+st.button("")
+
+# Text Input
+firstname = st.text_input("", "defalt")
+
+# Text_area
+firstname = st.text_area("", "defalt")
+
+# Date Input
+import datetime
+today = st.date_input("Today is", datetime.datetime.new())
+
+# number Input
+number = st.number_input("", 0, step = 1)
+
+# Time
+the_time = st.time_input("", datetime.time())
+
+# Display JSON
+st.json({'name':"jesse",
+        'gender':"male"})
+
+# Display Raw Code
+st.code("import ..")
+
+# Display Raw Code
+with st.echo()
+    ...
+
+# Progress Bar
+import time
+my_bar = st.progress(0)
+for p in range(10):
+    my_bar.progress(p + 1)
+
+# Spinner
+with st.spinner(""):
+    time.sleep(5)
+st.success("")
+
+# Balloons
+st.balloons()
+
+# sidebars
+st.sidebar.header("")
+st.sidebar.text("")
+
+# plot
+st.pyplot()
+
+# DataFrames
+st.dataframe(df)
+
+# Table
+st.table(df)
