@@ -38,17 +38,17 @@ def search(category, key):
         num = a.index(key)
 
         return [data['object'][num], 
-                data['id'][num], 
+                str(data['id'][num]), 
                 data['img_URL'][num], 
                 data['date'][num], 
                 data['unit'][num], 
                 data['unit_number'][num], 
                 data['purchase_number'][num], 
-                data['shelf'][num], 
-                data['container'][num], 
-                data['tag'][num], 
-                data['subsidy'][num], 
-                data['remark'][num]]
+                str(data['shelf'][num]), 
+                str(data['container'][num]), 
+                str(data['tag'][num]), 
+                str(data['subsidy'][num]), 
+                str(data['remark'][num])]
 
     else:
         return None

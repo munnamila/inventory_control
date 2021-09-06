@@ -4,9 +4,10 @@ import pandas as pd
 from PIL import Image
 
 import func
-import search_page
-import new_object_page
-import database_page
+import pages.search_page as search_page
+import pages.new_object_page as new_object_page
+import pages.database_page as database_page
+import pages.history_page as history_page
 
 
 # side_bar
@@ -31,7 +32,7 @@ elif page == "在庫検索":
     search_page.search_page()
 
 elif page == "登録歴史":
-    pass
+    history_page.history_page()
 
 elif page == "データベース":
     database_page.database_page()

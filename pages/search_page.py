@@ -50,15 +50,21 @@ def search_page():
                 data = func.search('object', str(object_search))
 
                 # データを表示
-                yzmdata = requests.get(data[2])
-                tempIm = BytesIO(yzmdata.content)
-                img = Image.open(tempIm)
-                column_0.image(img)
+                try:
+                    yzmdata = requests.get(data[2])
+                    tempIm = BytesIO(yzmdata.content)
+                    img = Image.open(tempIm)
+                    column_0.image(img)
+
+                except:
+                    pass
+
                 column_1.write(data[0])
                 column_2.write(data[1])
                 column_3.write(data[7])
                 column_4.write(data[8])
                 column_5.write(data[6])
+
 
                 # detail = column_7.button('詳細')
 
@@ -68,10 +74,14 @@ def search_page():
                 data = func.search('id', str(id_search))
 
                 # データを表示
-                yzmdata = requests.get(data[2])
-                tempIm = BytesIO(yzmdata.content)
-                img = Image.open(tempIm)
-                column_0.image(img)
+                try:
+                    yzmdata = requests.get(data[2])
+                    tempIm = BytesIO(yzmdata.content)
+                    img = Image.open(tempIm)
+                    column_0.image(img)
+
+                except:
+                    pass
                 column_1.write(data[0])
                 column_2.write(data[1])
                 column_3.write(data[7])
@@ -88,10 +98,15 @@ def search_page():
                 print(data)
 
                 # データを表示
-                yzmdata = requests.get(data[2])
-                tempIm = BytesIO(yzmdata.content)
-                img = Image.open(tempIm)
-                column_0.image(img)
+                try:
+                    yzmdata = requests.get(data[2])
+                    tempIm = BytesIO(yzmdata.content)
+                    img = Image.open(tempIm)
+                    column_0.image(img)
+
+                except:
+                    pass
+
                 column_1.write(data[0])
                 column_2.write(data[1])
                 column_3.write(data[7])
@@ -106,10 +121,15 @@ def search_page():
                 data = func.search('container', str(container_search))
 
                 # データを表示  
-                yzmdata = requests.get(data[2])
-                tempIm = BytesIO(yzmdata.content)
-                img = Image.open(tempIm)
-                column_0.image(img)
+                try:
+                    yzmdata = requests.get(data[2])
+                    tempIm = BytesIO(yzmdata.content)
+                    img = Image.open(tempIm)
+                    column_0.image(img)
+
+                except:
+                    pass
+
                 column_1.write(data[0])
                 column_2.write(data[1])
                 column_3.write(data[7])
@@ -124,10 +144,15 @@ def search_page():
                 data = func.search('container', str(container_search))
 
                 # データを表示
-                yzmdata = requests.get(data[2])
-                tempIm = BytesIO(yzmdata.content)
-                img = Image.open(tempIm)
-                column_0.image(img)
+                try:
+                    yzmdata = requests.get(data[2])
+                    tempIm = BytesIO(yzmdata.content)
+                    img = Image.open(tempIm)
+                    column_0.image(img)
+
+                except:
+                    pass
+
                 column_1.write(data[0])
                 column_2.write(data[1])
                 column_3.write(data[7])
@@ -142,10 +167,15 @@ def search_page():
                 data = func.search('tag', str(tag_search))
 
                 # データを表示
-                yzmdata = requests.get(data[2])
-                tempIm = BytesIO(yzmdata.content)
-                img = Image.open(tempIm)
-                column_0.image(img)
+                try:
+                    yzmdata = requests.get(data[2])
+                    tempIm = BytesIO(yzmdata.content)
+                    img = Image.open(tempIm)
+                    column_0.image(img)
+
+                except:
+                    pass
+
                 column_1.write(data[0])
                 column_2.write(data[1])
                 column_3.write(data[7])
